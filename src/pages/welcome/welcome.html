@@ -1,0 +1,40 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      {{ 'WELCOME_INTRO' | translate }}
+    </div>
+  </div>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2></ion-col>
+      <ion-col col-5>NORMAL HEART RATE</ion-col>
+      <ion-col col-4>60 - 100</ion-col>
+        <ion-col col-1></ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col col-5 class="h-rate">YOUR HEART RATE</ion-col>
+        <ion-input class="cut-input" type="number" [(ngModel)]="messages" disabled></ion-input>
+        <ion-col col-1></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div padding>
+    <button ion-button block (click)="emergencyCall()" class="em-call"><ion-icon class="panel-icon call-icon" name="call"></ion-icon>{{ 'EMERGENCY_CALL' | translate }}</button>
+  </div>
+  <ion-fab left bottom class="flting-btn-main">
+    <button ion-fab color="dark">
+      <ion-icon name="arrow-dropright"></ion-icon>
+    </button>
+  <ion-fab-list side="right">
+    <button class="sub-btn" color="dark" ion-fab *ngFor="let item of floatingItems" [title]="item.name"
+            (click)="floatingMenuHandler(item)">
+      <ion-icon [name]="item.icon"></ion-icon>
+    </button>
+  </ion-fab-list>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,91 @@
+page-paired-devices {
+
+  .flx-1{
+    flex: 1;
+  }
+  .grid-content {
+    overflow: auto;
+  }
+  .r-modal-header {
+    .header-text {
+      font-weight: bold;
+      color: #fff;
+      padding-top: 1.6rem;
+      padding-left: 2rem;
+    }
+    .header-spinner {
+      text-align: right;
+      padding-right: 2rem;
+    }
+  }
+
+  .panel {
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    padding: 5px;
+    .col {
+      // padding-top: 1rem;
+    }
+  }
+
+  .panel-icon {
+    border: 1px solid #717171;
+    border-radius: 3rem;
+    padding: 4px;
+    margin-right: 10px;
+  }
+
+  .panel:hover{
+    background-color: #e4e4e4;
+  }
+
+  .text-black {
+    color: #4e4e4e;
+    align-items: center;
+
+    ion-icon{
+      margin-right: 10px;
+      font-size: 3rem;
+    }
+  }
+
+  .panel-text {
+    background-color: #ccc;
+    font-size: 1.2rem;
+    color: #000;
+    margin-top: 20px;
+  }
+
+  .panel-btn-group {
+    text-align: right;
+    //color: #064a67;
+  }
+  .bluetooth-btn {
+    border-radius: 1.5rem;
+    background-color: white;
+    color: #1990ea;
+    border: 1px solid;
+  }
+  .dev-connected {
+    font-weight: bold;
+  }
+
+  .dev-connected::after{
+    content: " - Conected";
+    color: #60cd1e;
+  }
+
+  .warn {
+    color: #fb9005;
+  }
+
+  .spinner-md-circles circle {
+    fill: #32db64;
+  }
+
+  .scan-btn{
+    background-color: #32db64;
+    color: #fff;
+    min-width: 120px;
+  }
+}

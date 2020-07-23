@@ -1,0 +1,7 @@
+{
+  "name": "My Pulse",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
